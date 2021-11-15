@@ -1,0 +1,24 @@
+// font awesome
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+// variables & functions
+@import "@sass/functions";
+@import "@sass/variables";
+
+// base & layout
+@import "@sass/base";
+@import "@sass/breakpoints";
+@import "@sass/grid";
+
+// colors
+@import "@sass/colors";
+
+// components (button, card, navbar)
+@import "@sass/components/card";
+@import "@sass/components/button";
+@import "@sass/components/navbar";
+@import "@sass/components/badge";
+
+// utilities (margin, padding, opacity)
+@import "@sass/utilities";

@@ -1,0 +1,26 @@
+@use 'sass:math';
+
+.card {
+  display: block;
+  padding: $base-padding;
+  border: solid $border-sm $light;
+  box-shadow: $base-box-shadow;
+  border-radius: math.div($base-border-radius, 4);
+  transition: all 0.2s ease;
+  .card-title {
+    font-size: $font-size-lg;
+    padding-bottom: $base-padding;
+    font-weight: bold;
+  }
+
+  .card-body {
+    font-size: $base-font-size;
+    a {
+      text-decoration: underline;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    box-shadow: none;
+  }
+}

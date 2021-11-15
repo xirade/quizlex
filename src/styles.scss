@@ -1,0 +1,114 @@
+// You can customize base-variables here...
+
+@use "@sass/styles";
+
+/*
+-----------------------------------------------
+COLOR TEXT, BACKGROUND, BUTTONS:
+primary
+secondary
+error      
+info     
+blue     
+red    
+green      
+yellow   
+purple  
+orange
+gray
+-----------------------------------------------
+
+-----------------------------------------------
+TONES OF BACKROUND, TEXT, BUTTONS:
+dark-8
+dark-6
+dark-4
+dark-2
+
+light-8
+light-6
+light-4
+light-2
+-----------------------------------------------
+
+-----------------------------------------------
+FONT-SIZES:
+font-sm
+font-md
+font-lg
+font-xl
+font-2xl
+-----------------------------------------------
+
+
+-----------------------------------------------
+BADGE TEMPLATE:
+<span class="badge-orange text-white ml-1">new</span>
+-----------------------------------------------
+
+-----------------------------------------------
+BUTTON TEMPLATE:
+<a href="#" class="btn">default btn</a>
+<button class="btn">default btn</button>
+-----------------------------------------------
+
+
+-----------------------------------------------
+CARD TEMPLATE:
+
+    <div class="card">
+        <h3 class="card-title">This is card title</h3>
+        <p class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
+          blanditiis voluptates. <a class="text-yellow" href="#">Eius culpa</a>,
+          minima iusto consectetur nam mollitia aut!
+        </p>
+    </div>
+-----------------------------------------------
+
+-----------------------------------------------
+12 COLUMN GRID SYSTEM:
+
+<div class="row gap-1 justify-center">
+  <div class="col-12-xs col-5-sm col-3-xl">
+    <div class="card">
+      <h3 class="card-title">Hello, user</h3>
+      <p class="card-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+        exercitationem.
+      </p>
+    </div>
+  </div>
+  <div class="col-12-xs col-5-sm col-3-xl">
+    <div class="card">
+      <h3 class="card-title">Hello, user</h3>
+      <p class="card-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+        exercitationem.
+      </p>
+    </div>
+  </div>
+  <div class="col-12-xs col-5-sm col-3-xl">
+    <div class="card">
+      <h3 class="card-title">Hello, user</h3>
+      <p class="card-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+        exercitationem.
+      </p>
+    </div>
+  </div>
+  <div class="col-12-xs col-5-sm col-3-xl">
+    <div class="card">
+      <h3 class="card-title">Hello, user</h3>
+      <p class="card-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+        exercitationem.
+      </p>
+    </div>
+  </div>
+</div>
+-----------------------------------------------
+
+
+
+*/

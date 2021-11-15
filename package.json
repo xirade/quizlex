@@ -1,0 +1,35 @@
+{
+  "name": "quizlux",
+  "version": "1.0.0",
+  "description": "Quizlux is a quick and informal assessment of elite knowledge",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --env development",
+    "publish": "webpack serve --env production"
+  },
+  "keywords": [
+    "Quiz",
+    "knowledge",
+    "JS",
+    "puzzle"
+  ],
+  "author": "Xirade <6myusic6@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
+    "font-awesome": "^4.7.0",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  }
+}
