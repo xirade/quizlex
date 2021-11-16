@@ -15,6 +15,9 @@
     "puzzle"
   ],
   "author": "Xirade <6myusic6@gmail.com>",
+  "contributors": [
+    "Solarkas <mb_hairstyle@mail.ru>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.16.0",
