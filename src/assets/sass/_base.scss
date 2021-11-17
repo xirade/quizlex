@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap");
 * {
   color: inherit;
   margin: 0;
@@ -6,9 +6,11 @@
 }
 
 body {
-  font-family: "Martel Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 img {
   max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
