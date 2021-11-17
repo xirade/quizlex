@@ -7,7 +7,7 @@ $grid-gaps: (
   "2": 20px,
   "3": 30px,
 );
-$layout-values: flex-strart, flex-end, center, space-between, space-around;
+$layout-values: flex-start, flex-end, center, space-between, space-around;
 
 // base layout classes
 .container {
@@ -22,6 +22,7 @@ $layout-values: flex-strart, flex-end, center, space-between, space-around;
   display: flex;
   flex-flow: row wrap;
 }
+<<<<<<< HEAD
 // нужна помощь, почему блок не по центру? Вроде поставил margin: 0 auto;
 .modal {
   display: block; 
@@ -67,6 +68,8 @@ $layout-values: flex-strart, flex-end, center, space-between, space-around;
   text-align: center; 
   width: 50px;
 }
+=======
+>>>>>>> 1ebe799c120023a2cb80b18a490ec42c0bfce805
 
 @each $key, $val in $grid-gaps {
   .gap-#{$key} > * {

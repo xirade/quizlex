@@ -1,0 +1,32 @@
+@use "sass:math";
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: math.div($base-border-radius, 4);
+  width: 50%;
+  max-width: 400px;
+  overflow: auto;
+
+  .modal-content {
+    padding: $base-padding * 2;
+    border: solid $border-sm $gray;
+    text-align: center;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: $font-size-lg;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+}
