@@ -16,7 +16,7 @@ module.exports = ({ development }) => ({
     watchFiles: ["src/**/*"],
     open: true,
     compress: true,
-    port: 5500,
+    port: 5501,
     hot: development,
   },
   optimization: {
