@@ -2,6 +2,7 @@ const modalWindow = () => {
   // потом заменить на нажатый вариант ответа:
   const buttonModal = document.createElement("button");
   buttonModal.id = "idBtn";
+  buttonModal.className = "btn"
   buttonModal.textContent = "Ответ на вопрос";
 
   const divModalWindow = document.createElement("div");
@@ -15,21 +16,22 @@ const modalWindow = () => {
   </div>
 `;
 
-  // потом нужно поменять
-  document.body.append(divModalWindow, buttonModal);
-  //
-
-  buttonModal.onclick = () => (divModalWindow.classList.toggle("d-none"))
+  buttonModal.onclick = () => divModalWindow.classList.toggle("d-none");
 
   divModalWindow.addEventListener("click", (e) => {
     if (e.target.classList[0] === "close")
-      divModalWindow.classList.toggle("d-none")
+      divModalWindow.classList.toggle("d-none");
     if (e.target.id === "btn_1") {
-      divModalWindow.classList.toggle("d-none")
+      divModalWindow.classList.toggle("d-none");
       alert("Правильный ответ");
     }
-    if (e.target.id === "btn_2") divModalWindow.classList.toggle("d-none")
+    if (e.target.id === "btn_2") divModalWindow.classList.toggle("d-none");
   });
+
+  return {
+    buttonModal,
+    divModalWindow,
+  };
 };
 
 export default modalWindow;

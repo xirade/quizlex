@@ -1,4 +1,7 @@
 import "./styles.scss";
 import modalWindow from "./modules/module_window";
 
-modalWindow();
+const container = document.querySelector(".container");
+const { buttonModal, divModalWindow } = modalWindow();
+
+container.append(buttonModal, divModalWindow);
