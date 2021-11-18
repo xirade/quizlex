@@ -1,7 +1,8 @@
-@use 'sass:math';
+@use "sass:math";
 
 .card {
   display: block;
+  position: relative;
   padding: $base-padding;
   border: solid $border-sm $light;
   box-shadow: $base-box-shadow;
@@ -22,5 +23,40 @@
   &:hover {
     cursor: pointer;
     box-shadow: none;
+  }
+
+  .card-questions-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 55%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: space-around;
+
+    span {
+      overflow: hidden;
+      width: 100%;
+
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.3s;
+        font-weight: bold;
+
+        input[type="radio"] {
+          position: relative;
+          display: none;
+        }
+      }
+    }
+    a{
+      font-weight: bold;
+      font-size: $font-size-lg;
+    }
   }
 }

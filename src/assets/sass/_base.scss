@@ -14,3 +14,13 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+#settings {
+  label {
+    pointer-events: none;
+  }
+}
