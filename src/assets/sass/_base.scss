@@ -5,7 +5,9 @@
   padding: 0;
 }
 
-body {
+body,
+#settings span,
+#home span {
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -20,7 +22,8 @@ input[type="checkbox"] {
 }
 
 #settings {
-  label {
+  label,
+  i {
     pointer-events: none;
   }
 }

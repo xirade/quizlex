@@ -1,5 +1,4 @@
-import getCheckboxes from "@/utils/checkboxes";
-const modalWindow = (store) => {
+const modalWindow = ({ dispatch }) => {
   const divModalWindow = document.createElement("div");
   divModalWindow.className = "bg-blue-light-8 modal d-none";
   divModalWindow.innerHTML = `
@@ -25,8 +24,7 @@ const modalWindow = (store) => {
     }
     if (e.target.id === "btn_2") divModalWindow.classList.toggle("d-none");
     if (e.target.name === "show-window") {
-      store.dispatch({ type: "TOGGLE" });
-      getCheckboxes(store.getState().isShow);
+      dispatch({ type: "TOGGLE" });
       divModalWindow.classList.toggle("d-none");
     }
   });

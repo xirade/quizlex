@@ -1,6 +1,8 @@
 function getCheckboxes(checked) {
   const checkboxes = document.getElementsByName("show-window");
-  return checkboxes.forEach((checkbox) => (checkbox.checked = checked));
+  checkboxes.forEach((checkbox, i) => {
+    checkboxes[i].checked = checked;
+  });
 }
 
 export default getCheckboxes;

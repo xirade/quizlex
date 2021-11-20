@@ -1,4 +1,4 @@
-const questionModule = (store) => {
+const questionModule = ({ getState }) => {
   const container = document.querySelector(".row");
 
   function questionCard(card) {
@@ -25,7 +25,7 @@ const questionModule = (store) => {
           "What's his/her name?";
         currentTarget.querySelector(".card").append(listQuestions());
         currentTarget.querySelector("#next").addEventListener("click", () => {
-          if (store.getState().isShow) {
+          if (getState().isShow) {
             alert("Правильный/Неправильный ответ");
           } else {
             document.querySelector(".modal").classList.toggle("d-none");
